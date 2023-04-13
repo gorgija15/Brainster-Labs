@@ -1,0 +1,235 @@
+body {
+  margin: 0 !important;
+}
+/* Background Colors */
+
+.bg-yellow {
+  background-color: rgb(236, 196, 34);
+}
+
+.bg-yellow-light {
+  background-color: rgba(252, 210, 50, 1);
+}
+
+.bg-red {
+  background-color: #ff0000;
+}
+
+/* --------- */
+
+/* Navbar Section */
+
+.zoomh {
+  transition: transform 0.5s;
+}
+
+.zoomh:hover {
+  transform: scale(1.2);
+}
+
+.w-40 {
+  width: 40px !important;
+}
+
+.f-8 {
+  font-size: 8px;
+}
+
+.f-14 {
+  font-size: 13px;
+}
+
+@media (max-width: 768px) {
+  .toggle-dark {
+    background-color: rgb(44, 41, 41) !important;
+    height: 100vh !important;
+  }
+
+  ul li a {
+    color: white !important;
+  }
+  .pb-100 {
+    padding-bottom: 1000px !important;
+  }
+
+  .blockk {
+    display: block !important;
+  }
+}
+
+.text-black {
+  color: black;
+  transform: scale(0.9);
+  transition: transform 0.2s;
+}
+
+.text-black:hover {
+  transform: scale(1);
+  color: red !important;
+}
+/* --------- */
+
+/* Form Section */
+
+::placeholder {
+  font-size: 12px;
+  font-style: italic;
+}
+
+@media (min-width: 992px) {
+  .pb-form {
+    padding-top: 50px;
+    padding-bottom: 150px;
+  }
+}
+
+/* ---------- */
+
+/* Banner Section */
+
+.banner {
+  background: linear-gradient(
+      90deg,
+      rgba(47, 46, 56, 0.5) 0%,
+      rgba(10, 9, 9, 0.74) 0%
+    ),
+    url(./images/photo-1622126807280-9b5b32b28e77.jfif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+}
+
+h2 {
+  position: relative;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 5vw !important;
+  color: rgb(4, 41, 28);
+  -webkit-text-stroke: 0.05vw rgb(250, 218, 218);
+  transition: transform 0.5s;
+}
+
+h2:hover {
+  transform: scale(1.5);
+}
+
+@media (max-width: 991px) {
+  .banner {
+    height: 35vh;
+  }
+
+  h2 {
+    font-size: 10vw !important;
+  }
+}
+
+h2::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  color: rgb(199, 191, 175);
+  -webkit-text-stroke: 0vw #000;
+  border-right: 1px solid #fff;
+  overflow: hidden;
+  animation: animate 6s linear infinite;
+  white-space: nowrap;
+}
+
+@keyframes animate {
+  0%,
+  10%,
+  100% {
+    width: 0;
+  }
+
+  70%,
+  90% {
+    width: 100%;
+  }
+}
+/* --------- */
+
+/* Filters Section */
+
+p,
+h5 {
+  text-decoration: none !important;
+}
+
+.filters {
+  padding: 20px;
+}
+
+.hiddencheck {
+  visibility: hidden;
+}
+
+.active {
+  background-color: #000;
+  color: white;
+}
+
+.faCheckmark {
+  display: none;
+}
+
+.active .faCheckmark {
+  display: flex;
+  width: 28px;
+  background-color: rgb(87, 84, 84);
+  height: 28px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+}
+
+/* -------- */
+
+/* Cards Section */
+
+.f-50{
+  font-size: 50px;
+}
+
+.card {
+  box-shadow: 0 4px 4px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 10px !important;
+  transition: transform 0.2s;
+  transform: scale(0.95);
+}
+
+.card:hover {
+  transform: scale(1);
+}
+
+.button {
+  position: absolute;
+  bottom: 2%;
+  right: 3%;
+}
+
+.cardpic {
+  border-top-left-radius: 10px !important ;
+  border-top-right-radius: 10px !important ;
+}
+
+.w-65 {
+  width: 65%;
+}
+
+/* ------------- */
+
+/* Footer Section */
+
+.fa-heart {
+  color: red;
+}
+
+/* ------------- */
